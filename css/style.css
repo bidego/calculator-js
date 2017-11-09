@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script|Press+Start+2P');
+body {
+  background-color:#fff;
+}
+.container {
+  margin:auto;
+}
+.calculadora {
+  background-color: #bcbcbc;
+  width:320px;
+  margin:auto;
+  border-radius:20px;
+  padding: 15px 0 15px;
+  border-bottom: 5px solid #333;
+  box-shadow: 10px 10px 5px #000;
+  /*transform: rotate3d(1, -1, -1, 2deg) translateZ(200px) rotate(1deg) skewX(-10deg);*/
+  margin-top:10vh;
+}
+.container > .calculadora > hgroup {
+  color:#eee;
+  margin: auto;
+  width:300px;
+  text-align:center;
+}
+.container > .calculadora > hgroup > h1,.container > .calculadora > hgroup > h3 {
+  text-shadow: 1px 1px 1px #333;
+  margin:0;
+}
+.container > hgroup > h3 {
+  font-family: 'Oleo Script', cursive;
+}
+a {
+  text-decoration:none;
+  color: #cdf;
+}
+a:hover {
+  text-decoration:none;
+  color: #bce;
+  transition: all 0.4s ease;
+}
+.visor {
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 7px;
+  background: linear-gradient(#cdcdcd, #cecece);
+  border:1px solid #bbb;
+  border-top:3px solid #555;
+  margin:25px auto 3px;
+  padding-top:2px;
+  width:259px;
+  height:50px;
+  text-align: right;
+}
+h2,h6 {
+  margin:0;
+  padding:0;
+  max-width:259px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+h6 {
+  color:#999;
+}
+.botones {
+  margin: auto;
+  width:300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.botones div {
+  height: 35px;
+  margin: 6px 5px;
+  flex: -2 1 20%;
+}
+.botones div button {
+  color: White;
+  font-size:1em;
+  border-radius: 10%;
+  border-bottom: 2px solid black;
+  width:35px;
+  height:40px;
+  cursor:pointer;
+}
+.botones div.comun button {
+  background: linear-gradient(#aaa, #666, #ddd);
+}
+.botones div.comun button {
+  background: linear-gradient(#aaa, #666, #ddd);
+}
+.botones div.claro button {
+  background: linear-gradient(#ccc, #aaa, #aaa);
+}
+.botones div.power button,.botones div.power button {
+  background: linear-gradient(#c00, #700, #fdd);
+}
+.botones div button:active {
+  transform:translateY(2px) scale(0.95);
+}
+.botones div button:focus {
+  outline:none
+}

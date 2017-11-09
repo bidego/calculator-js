@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CalculatorJS</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body ng-app="calculatorApp">
+  <div class="container" ng-controller="StartUpController" ng-keypress="escribirTeclado($event)"> <!-- missing backspace. catches with keydown that doesnt catck aritmetic operators keys +-*/ function in escribirTecladoBack
+
+Aritmetic Operators Char Codes are different when handling events with KeyDown rather than KeyPress.
+Missing reserch.
+
+-->
+    <div class="calculadora">
+    <hgroup>
+      <h1>JS Calculator</h1>
+      <h3>by <a href="https://codepen.io/bidego/" target="_blank">bidego</a></h3>
+    </hgroup>
+    <form>
+      
+      <hgroup class="visor">
+        <h6 ng-bind="acumulador.operacion"></h6>
+        <h2 ng-bind="acumulador.total"></h2>
+      </hgroup>
+      
+      <div class="botones">
+        <div class="{{boton.class}}" ng-repeat="boton in boton">
+          <button ng-click="escribir(boton.respuesta)">{{boton.boton}}</button>
+        </div>
+      </div>
+      
+    </form>
+
+    </div>
+  </div>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
